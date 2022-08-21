@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- * DaisyUi -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <div class="btm-nav z-10">
+      <button class="bg-pink-200 text-pink-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+        </svg>
+        <span class="btm-nav-label">Home</span>
+      </button>
+      <button class="active bg-neutral text-neutral-content">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <span class="btm-nav-label">Warnings</span>
+      </button>
+      <button class="bg-teal-200 text-teal-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+        </svg>
+        <span class="btm-nav-label">Statics</span>
+      </button>
+    </div>
+  </header>
+  <section class="container mx-auto mt-12 pb-40">
+    <div class="grid grid-cols-2 gap-4">
+      <!-- * all products -->
+      <div class="grid grid-cols-2 gap-5">
+        <!-- * product 1 -->
+        <div class="card card-compact bg-teal-200 shadow-xl">
+          <!-- <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure> -->
+          <h1 class="text-5xl pl-4 pt-5 text-black font-semibold">Coffe.js</h1>
+          <div class="card-body text-black">
+            <h2 class="card-title text-sm">Coffe.js</h2>
+            <p class="font-semibold text-2xl">$<span>100</span></p>
+            <div class="card-actions justify-end">
+              <button onclick="addToCart(this)" class="btn border-transparent bg-teal-700 text-white">Buy Now1</button>
+            </div>
+          </div>
+        </div>
+        <!-- * product 2 -->
+        <div class="card card-compact bg-teal-200 shadow-xl">
+          <!-- <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure> -->
+          <h1 class="text-5xl pl-4 pt-5 text-black font-semibold">Heart.js</h1>
+          <div class="card-body text-black">
+            <h2 class="card-title text-sm">Heart.js</h2>
+            <p class="font-semibold text-2xl">$<span>105</span></p>
+            <div class="card-actions justify-end">
+              <button onclick="addToCart(this)" class="btn border-transparent bg-teal-700 text-white">Buy Now2</button>
+            </div>
+          </div>
+        </div>
+        <!-- * product 3 -->
+        <div class="card card-compact bg-teal-200 shadow-xl">
+          <!-- <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure> -->
+          <h1 class="text-5xl pl-4 pt-5 text-black font-semibold">Panda.js</h1>
+          <div class="card-body text-black">
+            <h2 class="card-title text-sm">Panda.js</h2>
+            <p class="font-semibold text-2xl">$<span>125</span></p>
+            <div class="card-actions justify-end">
+              <button  onclick="addToCart(this)" class="btn border-transparent bg-teal-700 text-white">Buy Now3</button>
+            </div>
+          </div>
+        </div>
+        <!-- * product 4 -->
+        <div class="card card-compact bg-teal-200 shadow-xl">
+          <!-- <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure> -->
+          <h1 class="text-5xl pl-4 pt-5 text-black font-semibold">Umbrella.js</h1>
+          <div class="card-body text-black">
+            <h2 class="card-title text-sm">Umbrella.js</h2>
+            <p class="font-semibold text-2xl">$<span>130</span></p>
+            <div class="card-actions justify-end">
+              <button  onclick="addToCart(this)" class="btn border-transparent bg-teal-700 text-white">Buy Now4</button>
+            </div>
+          </div>
+        </div>
+        <!-- * product 5 -->
+        <div class="card card-compact bg-teal-200 shadow-xl">
+          <!-- <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure> -->
+          <h1 class="text-5xl pl-4 pt-5 text-black font-semibold">VUE.js</h1>
+          <div class="card-body text-black">
+            <h2 class="card-title text-sm">VUE.js</h2>
+            <p class="font-semibold text-2xl">$<span>120</span></p>
+            <div class="card-actions justify-end">
+              <button onclick="addToCart(this)" class="btn border-transparent bg-teal-700 text-white">Buy Now5</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="divider divider-horizontal"></div> -->
+      <!-- ? -->
+      <div>
+        <h1 class="text-4xl mb-5">Total Products added <span id="total-added-product" class="text-white">0</span></h1>
+        <!-- ? table -->
+        <div class="overflow-x-auto">
+          <table class="table table-zebra w-full">
+            <!-- head -->
+            <thead>
+              <tr>
+                <th>list</th>
+                <th>Name</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody id="add-cart-product">
+              <tr>
+                <!-- <th>1</th>
+                <th>Name</th>
+                <th>Job</th> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="shopping.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- * DaisyUi -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <section class="container mx-auto mt-12 pb-40">
+    <div class="grid grid-cols-2 gap-4">
+      <!-- * all products -->
+      <div class="grid grid-cols-2 gap-5">
+        <!-- * product 1 -->
+        <div class="card card-compact bg-teal-200 shadow-xl">
+          <!-- <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure> -->
+          <h1 class="text-5xl pl-4 pt-5 text-black font-semibold">React.js</h1>
+          <div class="card-body text-black">
+            <h2 class="card-title text-sm">React.js</h2>
+            <p class="font-semibold text-2xl">$<span>100</span></p>
+            <div class="card-actions justify-end">
+              <button onclick="addToCart(this)" class="btn border-transparent bg-teal-700 text-white">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- * product 2 -->
+        <div class="card card-compact bg-teal-200 shadow-xl">
+          <!-- <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure> -->
+          <h1 class="text-5xl pl-4 pt-5 text-black font-semibold">Angular.js</h1>
+          <div class="card-body text-black">
+            <h2 class="card-title text-sm">Angular.js</h2>
+            <p class="font-semibold text-2xl">$<span>105</span></p>
+            <div class="card-actions justify-end">
+              <button onclick="addToCart(this)" class="btn border-transparent bg-teal-700 text-white">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- * product 3 -->
+        <div class="card card-compact bg-teal-200 shadow-xl">
+          <!-- <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure> -->
+          <h1 class="text-5xl pl-4 pt-5 text-black font-semibold">VUE.js</h1>
+          <div class="card-body text-black">
+            <h2 class="card-title text-sm">VUE.js</h2>
+            <p class="font-semibold text-2xl">$<span>125</span></p>
+            <div class="card-actions justify-end">
+              <button onclick="addToCart(this)" class="btn border-transparent bg-teal-700 text-white">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- * product 4 -->
+        <div class="card card-compact bg-teal-200 shadow-xl">
+          <!-- <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure> -->
+          <h1 class="text-5xl pl-4 pt-5 text-black font-semibold">Node.js</h1>
+          <div class="card-body text-black">
+            <h2 class="card-title text-sm">Node.js</h2>
+            <p class="font-semibold text-2xl">$<span>130</span></p>
+            <div class="card-actions justify-end">
+              <button onclick="addToCart(this)" class="btn border-transparent bg-teal-700 text-white">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- * product 5 -->
+        <div class="card card-compact bg-teal-200 shadow-xl">
+          <!-- <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure> -->
+          <h1 class="text-5xl pl-4 pt-5 text-black font-semibold">Next.js</h1>
+          <div class="card-body text-black">
+            <h2 class="card-title text-sm">Next.js</h2>
+            <p class="font-semibold text-2xl">$<span>120</span></p>
+            <div class="card-actions justify-end">
+              <button onclick="addToCart(this)" class="btn border-transparent bg-teal-700 text-white">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- * product 5 -->
+        <div class="card card-compact bg-teal-200 shadow-xl">
+            <!-- <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure> -->
+            <h1 class="text-5xl pl-4 pt-5 text-black font-semibold">Typescript</h1>
+            <div class="card-body text-black">
+              <h2 class="card-title text-sm">Typescript</h2>
+              <p class="font-semibold text-2xl">$<span>110</span></p>
+              <div class="card-actions justify-end">
+                <button onclick="addToCart(this)" class="btn border-transparent bg-teal-700 text-white">Buy Now</button>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- <div class="divider divider-horizontal"></div> -->
+      <!-- ? -->
+      <div>
+        <h1 class="text-4xl mb-5">Total Products added <span id="total-added-product" class="text-white">0</span></h1>
+        <!-- ? table -->
+        <div class="overflow-x-auto">
+          <table class="table table-zebra w-full">
+            <!-- head -->
+            <thead>
+              <tr>
+                <th>list</th>
+                <th>Name</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody id="add-cart-product">
+              <tr>
+                <!-- <th>1</th>
+                <th>Name</th>
+                <th>Job</th> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="custom.js"></script>
+</body>
+
+</html>
